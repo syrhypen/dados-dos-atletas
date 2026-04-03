@@ -27,7 +27,7 @@ class Atleta {
     }
 
     calculaMediaValida() {
-        let notasOrdenadas = this.notas.slice().sort(function(a, b){ return a - b });
+        let notasOrdenadas = this.notas.slice().sort(function(a, b){ return b - a });
         //console.log(notasOrdenadas)
 
         let notasValidas = notasOrdenadas.slice(1, 4);
